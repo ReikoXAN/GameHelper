@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jonny.gamehelper.RiskHelper"
+    tools:showIn="@layout/activity_risk_helper">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of Attackers"
+        android:id="@+id/txtVNoAttackers"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:background="#FFFFFF"
+            android:id="@+id/editTxtNoOfAtt"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/txtVNoAttackers"
+            android:layout_alignTop="@+id/txtVNoAttackers"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:background="#FFFFFF"
+            android:id="@+id/editTxtNoOfDef"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/txtVNoAttackers"
+            android:layout_alignTop="@+id/txtVNoDefenders"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of Defenders"
+        android:id="@+id/txtVNoDefenders"
+        android:layout_below="@+id/txtVNoAttackers"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:text="Roll"
+        android:id="@+id/btnRiskRoll"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txtVNoDefenders"
+        android:layout_centerHorizontal="true" />
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:layout_below="@+id/btnRiskRoll"
+    android:id="@+id/layoutResults"
+    android:background="@color/colorPrimary"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp">
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etAttResult1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/txtVAttackersRolled"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etAttResult2"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/etAttResult1"
+        android:layout_alignTop="@+id/etAttResult1"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etAttResult3"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/etAttResult2"
+        android:layout_alignTop="@+id/etAttResult1"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etAttResult4"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/etAttResult3"
+        android:layout_alignTop="@+id/etAttResult1"
+        />
+<!--endOfAttacker Start of Defenders-->
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etDefResult1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/etAttResult1"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etDefResult2"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/etDefResult1"
+        android:layout_alignTop="@+id/etDefResult1"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etDefResult3"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/etDefResult2"
+        android:layout_alignTop="@+id/etDefResult1"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/etDefResult4"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/etDefResult3"
+        android:layout_alignTop="@+id/etDefResult1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Attackers Rolled"
+        android:id="@+id/txtVAttackersRolled"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Defenders Rolled"
+        android:id="@+id/txtVDefendersRolled"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etAttResult1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Attackers Defeated"
+            android:id="@+id/txtVAttackerDead"
+            android:layout_below="@+id/layoutResults"
+            android:layout_marginTop="30dp"
+            android:layout_alignLeft="@+id/layoutResults"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:background="#FFFFFF"
+            android:id="@+id/etAttersLost"
+
+            android:layout_toRightOf="@+id/txtVAttackerDead"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@id/txtVAttackerDead"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Defenders Defeated"
+            android:id="@+id/txtVDefendersDead"
+            android:layout_below="@+id/txtVAttackerDead"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/layoutResults"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:background="#FFFFFF"
+            android:id="@+id/etdefsLost"
+
+            android:layout_toRightOf="@+id/txtVAttackerDead"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@id/txtVDefendersDead"/>
+    </RelativeLayout>
+</ScrollView>

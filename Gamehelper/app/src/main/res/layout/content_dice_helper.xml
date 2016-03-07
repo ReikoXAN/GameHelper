@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jonny.gamehelper.DiceHelper"
+    tools:showIn="@layout/activity_dice_helper">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of die"
+        android:id="@+id/txtVNoDice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtNumberDice"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtVNoDice"
+        android:layout_alignTop="@+id/txtVNoDice"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of sides"
+        android:id="@+id/txtVNoSides"
+        android:layout_below="@+id/txtVNoDice"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtNumberodSides"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/editTxtNumberDice"
+        android:layout_alignTop="@+id/txtVNoSides"
+        android:layout_alignRight="@+id/editTxtNumberDice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+        android:id="@+id/txtVResult"
+        android:layout_below="@+id/editTxtNumberodSides"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:text="Roll"
+        android:id="@+id/btnRollDice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtVResult"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtResult"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/txtVNoSides"
+        android:layout_alignRight="@+id/editTxtNumberodSides"
+        android:layout_alignTop="@+id/txtVResult"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtDiceResult1"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnRollDice"
+        android:layout_toStartOf="@+id/editTxtDiceResult2"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtDiceResult2"
+        android:layout_alignTop="@+id/editTxtDiceResult1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtDiceResult3"
+        android:layout_marginLeft="50dp"
+        android:layout_alignTop="@+id/editTxtDiceResult1"
+        android:layout_toEndOf="@+id/editTxtDiceResult2" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtDiceResult4"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editTxtDiceResult1"
+        android:layout_toStartOf="@+id/editTxtDiceResult2" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/editTxtDiceResult5"
+        android:layout_alignTop="@+id/editTxtDiceResult4"
+        android:layout_toRightOf="@+id/editTxtDiceResult4"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:text="Save Roll"
+        android:id="@+id/btnSaveRoll"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editTxtDiceResult4"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</ScrollView>

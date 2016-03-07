@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Gamehelper</string>
+    <string name ="TesterMenuDisply">TesterMenu_view</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hub">Hub</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_games_menu">GamesMenu</string>
+    <string name="title_activity_instructions_menu">InstructionsMenu</string>
+    <string name="title_activity_stats">Stats</string>
+    <string name="title_activity_risk_helper">RiskHelper</string>
+    <string name="title_activity_dice_helper">DiceHelper</string>
+    <string name="title_activity_monopoly_helper">MonopolyHelper</string>
+</resources>
