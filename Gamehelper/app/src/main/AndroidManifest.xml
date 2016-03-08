@@ -81,7 +81,8 @@
         <activity
             android:name=".RiskHelper"
             android:label="@string/title_activity_risk_helper"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="com.jonny.gamehelper.RiskHelper" />
 

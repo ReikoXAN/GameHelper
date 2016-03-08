@@ -11,4 +11,17 @@
     <string name="title_activity_risk_helper">RiskHelper</string>
     <string name="title_activity_dice_helper">DiceHelper</string>
     <string name="title_activity_monopoly_helper">MonopolyHelper</string>
+    <string-array name="NoOfAttspn">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="NoOfDefspn">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>

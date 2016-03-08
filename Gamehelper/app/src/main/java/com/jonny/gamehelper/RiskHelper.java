@@ -6,9 +6,19 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class RiskHelper extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
+public class RiskHelper extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+
+    Spinner mySpin;
+    Spinner mySpinDef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +34,38 @@ public class RiskHelper extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        mySpin = (Spinner) findViewById(R.id.mySpinspn);
+        mySpinDef = (Spinner) findViewById(R.id.mySpinForDef);
+
+        ArrayAdapter myArrayAdpt = ArrayAdapter.createFromResource(
+                this, R.array.NoOfAttspn, R.layout.spinner_item);
+
+        ArrayAdapter myArrayAdptDef = ArrayAdapter.createFromResource(
+                this, R.array.NoOfDefspn, R.layout.spinner_item);
+
+        mySpin.setAdapter(myArrayAdpt);
+        mySpin.setOnItemSelectedListener(this);
+
+        mySpinDef.setAdapter(myArrayAdptDef);
+        mySpinDef.setOnItemSelectedListener(this);
+
     }
 
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        TextView myTxtspn = (TextView)view;
+
+        Toast.makeText(this,"Selected " + myTxtspn.getText(),Toast.LENGTH_LONG).show();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
 }
+
+

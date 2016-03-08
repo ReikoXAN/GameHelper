@@ -60,7 +60,7 @@
         android:minWidth="150dp"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/diem"
+        android:src="@drawable/boltstats"
         android:scaleType="fitCenter" />
 
     <ImageButton
